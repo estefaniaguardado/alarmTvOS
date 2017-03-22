@@ -16,9 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    [self showCurrentTime];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showCurrentTime) userInfo:nil repeats:YES];
+}
+
+-(void)showCurrentTime{
+    
+    NSDate *currentTime = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    self.hourLabel.text=[dateFormatter stringFromDate:currentTime];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
