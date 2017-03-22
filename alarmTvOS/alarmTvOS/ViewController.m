@@ -16,7 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    [self.hourLabel setText:[self getCurrentDate]];
+}
+
+- (NSString *) getCurrentDate{
+    
+    NSDate *today = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    NSString *currentTime = [dateFormatter stringFromDate:today];
+    
+    NSLog(@"User's current time in their preference format:%@", currentTime);
+    return currentTime;
 }
 
 
