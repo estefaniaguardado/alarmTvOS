@@ -17,21 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.hourLabel setText:[self getCurrentDate]];
+    [self showCurrentTime];
 }
 
-- (NSString *) getCurrentDate{
+- (void)viewWillAppear:(BOOL)animated{
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showCurrentTime) userInfo:nil repeats:YES];
+}
+
+-(void)showCurrentTime{
     
-    NSDate *today = [NSDate date];
+    NSDate *currentTime = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-
-    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
-    NSString *currentTime = [dateFormatter stringFromDate:today];
     
-    NSLog(@"User's current time in their preference format:%@", currentTime);
-    return currentTime;
+    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    self.hourLabel.text=[dateFormatter stringFromDate:currentTime];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
