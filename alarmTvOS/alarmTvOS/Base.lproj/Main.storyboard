@@ -12,7 +12,7 @@
         <!--Sleep-->
         <scene sceneID="Ccd-9p-MCy">
             <objects>
-                <viewController id="Glm-DT-nqz" sceneMemberID="viewController">
+                <viewController id="Glm-DT-nqz" customClass="SleepViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ctS-pR-Bve"/>
                         <viewControllerLayoutGuide type="bottom" id="qxi-LM-gD1"/>
@@ -20,8 +20,48 @@
                     <view key="view" contentMode="scaleToFill" id="4Fr-Od-k3T">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="504-4E-QJH">
+                                <rect key="frame" x="1164" y="465" width="188" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" image="plus"/>
+                                <connections>
+                                    <action selector="setPlusSleepTimeButton:" destination="Glm-DT-nqz" eventType="primaryActionTriggered" id="3YF-fY-CI6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MC-p9-jZx">
+                                <rect key="frame" x="816" y="437" width="288" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJn-aa-srX">
+                                <rect key="frame" x="518" y="466" width="238" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" image="minus"/>
+                                <connections>
+                                    <action selector="setMinusSleepTimeButton:" destination="Glm-DT-nqz" eventType="primaryActionTriggered" id="xbb-3I-UHk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azY-SH-dVk">
+                                <rect key="frame" x="831" y="668" width="258" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Accept"/>
+                                <connections>
+                                    <action selector="sleepTimeMode:" destination="Glm-DT-nqz" eventType="primaryActionTriggered" id="bZa-53-EHH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sleep" id="p7J-mT-HQO"/>
+                    <connections>
+                        <outlet property="sleepTimeLabel" destination="3MC-p9-jZx" id="fRm-xo-pnf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYo-4o-oqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,4 +117,8 @@
             <point key="canvasLocation" x="269" y="-1989"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="minus" width="109" height="108"/>
+        <image name="plus" width="108" height="109"/>
+    </resources>
 </document>

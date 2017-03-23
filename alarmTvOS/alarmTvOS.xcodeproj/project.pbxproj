@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA94E90D1E8405D500A2F4E7 /* SleepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA94E90C1E8405D500A2F4E7 /* SleepViewController.m */; };
 		CABBE9271E827C0E00A3E5A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CABBE9261E827C0E00A3E5A7 /* main.m */; };
 		CABBE92A1E827C0E00A3E5A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CABBE9291E827C0E00A3E5A7 /* AppDelegate.m */; };
 		CABBE92D1E827C0E00A3E5A7 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CABBE92C1E827C0E00A3E5A7 /* ClockViewController.m */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA94E90B1E8405D500A2F4E7 /* SleepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepViewController.h; sourceTree = "<group>"; };
+		CA94E90C1E8405D500A2F4E7 /* SleepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepViewController.m; sourceTree = "<group>"; };
 		CABBE9221E827C0E00A3E5A7 /* alarmTvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alarmTvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABBE9261E827C0E00A3E5A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CABBE9281E827C0E00A3E5A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				CABBE9291E827C0E00A3E5A7 /* AppDelegate.m */,
 				CABBE92B1E827C0E00A3E5A7 /* ClockViewController.h */,
 				CABBE92C1E827C0E00A3E5A7 /* ClockViewController.m */,
+				CA94E90B1E8405D500A2F4E7 /* SleepViewController.h */,
+				CA94E90C1E8405D500A2F4E7 /* SleepViewController.m */,
 				CABBE92E1E827C0E00A3E5A7 /* Main.storyboard */,
 				CABBE9311E827C0E00A3E5A7 /* Assets.xcassets */,
 				CABBE9331E827C0E00A3E5A7 /* Info.plist */,
@@ -269,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA94E90D1E8405D500A2F4E7 /* SleepViewController.m in Sources */,
 				CABBE92D1E827C0E00A3E5A7 /* ClockViewController.m in Sources */,
 				CABBE92A1E827C0E00A3E5A7 /* AppDelegate.m in Sources */,
 				CABBE9271E827C0E00A3E5A7 /* main.m in Sources */,
