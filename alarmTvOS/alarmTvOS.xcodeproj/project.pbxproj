@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CABBE9271E827C0E00A3E5A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CABBE9261E827C0E00A3E5A7 /* main.m */; };
 		CABBE92A1E827C0E00A3E5A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CABBE9291E827C0E00A3E5A7 /* AppDelegate.m */; };
-		CABBE92D1E827C0E00A3E5A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CABBE92C1E827C0E00A3E5A7 /* ViewController.m */; };
+		CABBE92D1E827C0E00A3E5A7 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CABBE92C1E827C0E00A3E5A7 /* ClockViewController.m */; };
 		CABBE9301E827C0E00A3E5A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CABBE92E1E827C0E00A3E5A7 /* Main.storyboard */; };
 		CABBE9321E827C0E00A3E5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABBE9311E827C0E00A3E5A7 /* Assets.xcassets */; };
 		CABBE93D1E827C0E00A3E5A7 /* alarmTvOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CABBE93C1E827C0E00A3E5A7 /* alarmTvOSTests.m */; };
@@ -38,8 +38,8 @@
 		CABBE9261E827C0E00A3E5A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CABBE9281E827C0E00A3E5A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CABBE9291E827C0E00A3E5A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CABBE92B1E827C0E00A3E5A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CABBE92C1E827C0E00A3E5A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CABBE92B1E827C0E00A3E5A7 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		CABBE92C1E827C0E00A3E5A7 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		CABBE92F1E827C0E00A3E5A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CABBE9311E827C0E00A3E5A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CABBE9331E827C0E00A3E5A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,8 +101,8 @@
 			children = (
 				CABBE9281E827C0E00A3E5A7 /* AppDelegate.h */,
 				CABBE9291E827C0E00A3E5A7 /* AppDelegate.m */,
-				CABBE92B1E827C0E00A3E5A7 /* ViewController.h */,
-				CABBE92C1E827C0E00A3E5A7 /* ViewController.m */,
+				CABBE92B1E827C0E00A3E5A7 /* ClockViewController.h */,
+				CABBE92C1E827C0E00A3E5A7 /* ClockViewController.m */,
 				CABBE92E1E827C0E00A3E5A7 /* Main.storyboard */,
 				CABBE9311E827C0E00A3E5A7 /* Assets.xcassets */,
 				CABBE9331E827C0E00A3E5A7 /* Info.plist */,
@@ -269,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CABBE92D1E827C0E00A3E5A7 /* ViewController.m in Sources */,
+				CABBE92D1E827C0E00A3E5A7 /* ClockViewController.m in Sources */,
 				CABBE92A1E827C0E00A3E5A7 /* AppDelegate.m in Sources */,
 				CABBE9271E827C0E00A3E5A7 /* main.m in Sources */,
 			);
@@ -495,6 +495,7 @@
 				CABBE94E1E827C0E00A3E5A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CABBE94F1E827C0E00A3E5A7 /* Build configuration list for PBXNativeTarget "alarmTvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +504,7 @@
 				CABBE9511E827C0E00A3E5A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CABBE9521E827C0E00A3E5A7 /* Build configuration list for PBXNativeTarget "alarmTvOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +513,7 @@
 				CABBE9541E827C0E00A3E5A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

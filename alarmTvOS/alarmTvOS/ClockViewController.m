@@ -6,13 +6,13 @@
 //  Copyright © 2017 Larsecg. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ClockViewController.h"
 
-@interface ViewController ()
+@interface ClockViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ClockViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
