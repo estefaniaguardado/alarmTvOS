@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ClockViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *hourLabel;
 
